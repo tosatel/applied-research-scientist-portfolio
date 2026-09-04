@@ -1,0 +1,9 @@
+[project]
+name = "applied-research-scientist-portfolio"
+version = "0.1.0"
+description = "Applied research portfolio spanning AI/ML, LLM evaluation, trustworthy AI, RAG, and cybersecurity."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
