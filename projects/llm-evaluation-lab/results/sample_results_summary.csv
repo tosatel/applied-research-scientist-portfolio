@@ -1,0 +1,7 @@
+model,condition,n,exact_match,token_f1,keyword_coverage,groundedness,hallucination_proxy,appropriate_refusal,avg_latency_ms,avg_input_tokens,avg_output_tokens,avg_estimated_cost_usd
+DemoModel-A,baseline,6,0.3333,0.6456,0.4445,,,0.8333,326.6667,36.6667,10.8333,0.0006
+DemoModel-A,context_augmented,6,0.0,0.3841,0.8611,0.5937,0.4063,1.0,350.3333,67.5,16.6667,0.0009
+DemoModel-A,prompt_variant,6,0.1667,0.5336,0.5417,,,1.0,323.8333,34.0,8.5,0.0006
+DemoModel-B,baseline,6,0.1667,0.5223,0.6667,,,1.0,270.8333,35.5,9.8333,0.0005
+DemoModel-B,context_augmented,6,0.1667,0.3927,0.5,0.6046,0.3955,1.0,286.6667,65.6667,13.5,0.0007
+DemoModel-B,prompt_variant,6,0.1667,0.5227,0.4444,,,1.0,266.6667,33.1667,7.8333,0.0005

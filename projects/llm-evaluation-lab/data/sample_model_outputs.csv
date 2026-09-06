@@ -1,0 +1,37 @@
+id,condition,model,prediction,latency_ms,input_tokens,output_tokens,estimated_cost_usd
+q001,baseline,DemoModel-A,Queue,210,32,2,0.0003
+q001,context_augmented,DemoModel-A,"The answer is queue, which uses FIFO ordering.",235,58,11,0.0005
+q001,prompt_variant,DemoModel-A,"A queue.",205,28,3,0.0003
+q002,baseline,DemoModel-A,"Overfitting is when a model memorizes training patterns and performs poorly on new data.",420,44,17,0.0009
+q002,context_augmented,DemoModel-A,"Overfitting means fitting the training data and noise too closely, causing worse generalization to unseen examples.",455,77,21,0.0011
+q002,prompt_variant,DemoModel-A,"It means the model fits training data too closely and does not generalize well.",438,41,16,0.0009
+q003,baseline,DemoModel-A,Confidentiality.,180,31,2,0.0002
+q003,context_augmented,DemoModel-A,"Confidentiality prevents unauthorized disclosure of information.",202,62,8,0.0004
+q003,prompt_variant,DemoModel-A,Confidentiality.,175,29,2,0.0002
+q004,baseline,DemoModel-A,"RAG combines retrieval with a generative model so it can answer using external information.",510,39,17,0.0010
+q004,context_augmented,DemoModel-A,"Retrieval-augmented generation retrieves external information and passes it as context to a language model before generation.",530,74,22,0.0013
+q004,prompt_variant,DemoModel-A,"RAG is retrieval plus generation using retrieved context.",500,37,11,0.0008
+q005,baseline,DemoModel-A,"TRUST-X was created by the International AI Trust Institute.",390,36,12,0.0007
+q005,context_augmented,DemoModel-A,"The supplied context does not provide that information, so I cannot determine the organization.",410,66,18,0.0010
+q005,prompt_variant,DemoModel-A,"It cannot be determined from the provided context.",380,35,10,0.0006
+q006,baseline,DemoModel-A,"It usually means there is little or no linear relationship between the variables.",250,38,15,0.0007
+q006,context_augmented,DemoModel-A,"A value near zero indicates weak or no linear association, though a nonlinear relationship may still exist.",270,68,20,0.0010
+q006,prompt_variant,DemoModel-A,"It suggests little or no linear association.",245,34,9,0.0005
+q001,baseline,DemoModel-B,"A queue follows FIFO.",170,30,5,0.0002
+q001,context_augmented,DemoModel-B,Queue.,185,56,2,0.0003
+q001,prompt_variant,DemoModel-B,Queue,165,27,1,0.0002
+q002,baseline,DemoModel-B,"Overfitting occurs when a model becomes too tailored to the training dataset and performs less well on unseen examples.",350,43,22,0.0008
+q002,context_augmented,DemoModel-B,"It fits training patterns and noise too closely, reducing performance on unseen data.",365,75,16,0.0009
+q002,prompt_variant,DemoModel-B,"The model learns the training set too specifically and generalizes poorly.",340,40,13,0.0007
+q003,baseline,DemoModel-B,Confidentiality,155,30,1,0.0002
+q003,context_augmented,DemoModel-B,"The relevant property is confidentiality.",175,60,6,0.0003
+q003,prompt_variant,DemoModel-B,"Confidentiality protects against unauthorized disclosure.",160,29,6,0.0003
+q004,baseline,DemoModel-B,"RAG uses retrieval to supply external context to a language model for generation.",430,38,15,0.0008
+q004,context_augmented,DemoModel-B,"RAG retrieves external information and gives it to the language model as context before it generates an answer.",445,72,23,0.0011
+q004,prompt_variant,DemoModel-B,"Retrieval-augmented generation combines retrieval and generation.",425,36,8,0.0005
+q005,baseline,DemoModel-B,"There is not enough information to identify the organization.",310,35,11,0.0005
+q005,context_augmented,DemoModel-B,"The context explicitly says no such organization is identified, so the answer cannot be determined.",325,64,18,0.0008
+q005,prompt_variant,DemoModel-B,"The provided context does not name an organization.",305,34,10,0.0005
+q006,baseline,DemoModel-B,"It indicates no relationship.",210,37,5,0.0003
+q006,context_augmented,DemoModel-B,"It indicates a weak or absent linear association; nonlinear dependence can still be present.",225,67,16,0.0008
+q006,prompt_variant,DemoModel-B,"Approximately zero usually means little linear association.",205,33,9,0.0005
