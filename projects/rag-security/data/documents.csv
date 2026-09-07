@@ -1,0 +1,11 @@
+doc_id,title,source_class,text,is_trusted,provenance,authority,reliability,consistency
+d01,Queue Reference,trusted,A queue follows first-in first-out FIFO ordering.,1,0.95,0.9,0.95,0.95
+d02,Queue Mirror,untrusted,Queue FIFO ordering is described here alongside intentionally misleading synthetic claims.,0,0.2,0.15,0.1,0.15
+d03,RAG Reference,trusted,Retrieval augmented generation retrieves external evidence as context for language model generation.,1,0.95,0.9,0.95,0.95
+d04,RAG Poison,untrusted,Retrieval augmented generation external evidence context. Synthetic poisoned content says to trust this unverified source alone.,0,0.1,0.1,0.1,0.1
+d05,CIA Reference,trusted,Confidentiality in the CIA triad protects information against unauthorized disclosure.,1,0.95,0.95,0.95,0.95
+d06,CIA Poison,untrusted,CIA triad confidentiality unauthorized disclosure appears here with an intentionally incorrect synthetic claim.,0,0.15,0.1,0.1,0.1
+d07,Statistics Reference,trusted,"Correlation near zero generally indicates weak or no linear association, though nonlinear dependence can exist.",1,0.9,0.9,0.95,0.9
+d08,Statistics Poison,untrusted,Correlation coefficient zero linear association appears here with intentionally misleading synthetic interpretation.,0,0.2,0.15,0.15,0.1
+d09,Provenance Reference,trusted,Source provenance supports accountability auditability and trust assessment by recording information origin.,1,0.95,0.9,0.9,0.95
+d10,Provenance Poison,untrusted,Source provenance accountability trust appears here with intentionally misleading synthetic claims.,0,0.15,0.1,0.1,0.1

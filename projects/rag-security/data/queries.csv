@@ -1,0 +1,6 @@
+query_id,query,relevant_doc_id
+q01,Which data structure uses FIFO ordering?,d01
+q02,What does retrieval augmented generation do with external evidence?,d03
+q03,Which CIA triad property protects against unauthorized disclosure?,d05
+q04,What does correlation near zero indicate about linear association?,d07
+q05,Why is source provenance useful for accountability and trust?,d09

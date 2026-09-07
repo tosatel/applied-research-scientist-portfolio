@@ -1,0 +1,4 @@
+attack_class,description,measure
+corpus_poisoning,Synthetic misleading content is present in the retrieval corpus.,poisoned_context_exposure
+relevance_mimicry,Low-trust content repeats query-relevant concepts.,poisoned_top1
+low_provenance,Relevant-looking evidence has weak trust metadata.,mean_retrieved_trust

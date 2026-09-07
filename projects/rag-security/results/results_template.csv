@@ -1,0 +1,1 @@
+query_id,condition,retrieved_doc_ids,precision_at_k,relevant_evidence_coverage,poisoned_context_exposure,poisoned_top1,trusted_context_ratio,mean_retrieved_trust,trust_weighted_retrieval_quality,security_utility_score
