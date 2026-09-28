@@ -1,0 +1,17 @@
+model,feature,importance
+Logistic Regression,failed_logins,0.851363062098535
+Logistic Regression,connection_count,2.0331251365378757
+Logistic Regression,unique_destinations,1.6459589924848999
+Logistic Regression,bytes_mb,0.45004784682477766
+Logistic Regression,session_minutes,0.2737204260183615
+Logistic Regression,off_hours,0.5966310210284784
+Logistic Regression,privileged_action,0.45424414541911573
+Logistic Regression,baseline_deviation,1.7221366561317326
+Random Forest,failed_logins,0.11008007146593261
+Random Forest,connection_count,0.3596960766297472
+Random Forest,unique_destinations,0.21201416023849282
+Random Forest,bytes_mb,0.023016323035459422
+Random Forest,session_minutes,0.007453418307644576
+Random Forest,off_hours,0.03320904223652007
+Random Forest,privileged_action,0.00921519143741404
+Random Forest,baseline_deviation,0.2453157166487892
