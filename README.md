@@ -253,21 +253,75 @@ Future phases will connect evidence from the LLM Evaluation and RAG Security pro
 
 **Project:** `projects/trustworthy-ai/`
 
-4. Cybersecurity + Machine Learning
+### 4. Explainable Cybersecurity Anomaly Detection Lab
 
-Status: Planned
+**Status: Active / Initial reproducible framework completed**
 
-Applied machine-learning research for cybersecurity problems including:
+A defensive machine-learning research project investigating whether anomalous cybersecurity events can be detected while maintaining interpretability and operationally useful false-positive rates.
 
-anomaly detection;
-phishing detection;
-malicious-behaviour detection;
-security analytics;
-threat prioritization;
-AI-assisted cyber defence; and
-adversarial machine learning.
+#### Primary Research Question
 
-The research will examine both predictive performance and the operational limitations, adversarial risks, explainability, and trustworthiness of ML-based security systems.
+How effectively can machine-learning models detect anomalous cybersecurity events while maintaining interpretability, robustness, and operationally useful false-positive rates?
+
+#### Experimental Design
+
+The initial study compares three approaches:
+
+- Logistic Regression
+- Random Forest
+- Isolation Forest
+
+The models are evaluated using:
+
+- Precision
+- Recall
+- F1 score
+- False-positive rate
+- Alerts per 1,000 events
+- ROC-AUC
+- PR-AUC
+- Feature importance and interpretability
+
+#### Initial Findings
+
+On the synthetic evaluation dataset:
+
+| Model | Precision | Recall | F1 | False-Positive Rate |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 0.967 | 1.000 | 0.983 | 0.0047 |
+| Random Forest | 1.000 | 1.000 | 1.000 | 0.0000 |
+| Isolation Forest | 0.558 | 1.000 | 0.716 | 0.1090 |
+
+Random Forest achieved the strongest performance in the controlled synthetic experiment. Logistic Regression also produced strong detection performance with a low false-positive rate.
+
+Isolation Forest achieved complete recall but generated substantially more false positives, illustrating an important operational trade-off between anomaly sensitivity and alert burden.
+
+Feature-importance analysis identified connection count, baseline deviation, and unique destinations as prominent signals in the synthetic experiment.
+
+#### Interpretation and Limitations
+
+The initial results demonstrate the evaluation pipeline under controlled synthetic conditions and should not be interpreted as evidence of equivalent performance in operational cybersecurity environments.
+
+The strong separation between synthetic normal and anomalous events may make the classification problem easier than real-world threat detection. Future experiments will therefore introduce more difficult class boundaries, distribution shift, temporal evaluation, class imbalance, and external cybersecurity datasets.
+
+#### Research Artifacts
+
+The project includes:
+
+- synthetic security-event dataset;
+- documented feature dictionary;
+- supervised and unsupervised ML baselines;
+- operational security metrics;
+- false-positive analysis;
+- model explainability;
+- reproducible Python experiment pipeline;
+- Jupyter notebook;
+- automated tests;
+- research protocol;
+- defensive threat model; and
+- publication-ready research figures.
+
+**Project:** `projects/cybersecurity-ml/`
 
 Research Themes
 Research
