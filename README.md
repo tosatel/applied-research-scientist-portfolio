@@ -179,21 +179,79 @@ Future phases will extend the work to embedding-based retrieval, larger corpora,
 
 Project: projects/rag-security/
 
-3. Trustworthy AI
+ 3. Trustworthy AI Evaluation Framework
 
-Status: Planned
+**Status: Active / Initial reproducible framework completed**
 
-Research into practical methods for designing and evaluating AI systems that are:
+A reproducible research framework for evaluating AI trustworthiness across multiple technical and governance dimensions rather than relying on model performance alone.
 
-reliable;
-transparent;
-accountable;
-privacy-aware;
-robust;
-explainable; and
-aligned with organizational governance requirements.
+#### Primary Research Question
 
-The project will connect technical evaluation with AI governance, risk management, computational trust, and socio-technical considerations.
+How can AI trustworthiness be evaluated across multiple technical and governance dimensions without allowing strength in one area to conceal a critical weakness in another?
+
+#### Research Objectives
+
+The project investigates:
+
+- whether conventional performance metrics are sufficient for deployment-readiness decisions;
+- how reliability, robustness, transparency, privacy, fairness, and governance can be evaluated jointly;
+- whether multidimensional trust scoring reveals risks hidden by aggregate performance metrics;
+- how critical-risk gates can prevent strong averages from masking unacceptable weaknesses;
+- how explicit weights and thresholds improve the auditability of AI evaluations; and
+- how technical evaluation can be connected with organizational AI governance.
+
+#### Trustworthiness Dimensions
+
+The initial framework evaluates six dimensions:
+
+1. Reliability
+2. Robustness
+3. Transparency
+4. Privacy
+5. Fairness
+6. Governance
+
+A weighted composite trust score is calculated as:
+
+`CompositeTrust = Σ(weight_i × score_i) / Σ(weight_i)`
+
+The framework also applies dimension-specific critical-risk gates so that a high composite score cannot compensate for a critical weakness in an individual dimension.
+
+#### Experimental Readiness Categories
+
+The research prototype currently uses three experimental categories:
+
+- **Ready for Controlled Pilot** — composite score ≥ 0.80 and all critical gates pass.
+- **Conditional Review** — composite score ≥ 0.65 and all critical gates pass.
+- **Remediation Required** — at least one critical gate fails or composite score < 0.65.
+
+These categories are experimental research constructs and are not intended as regulatory or compliance determinations.
+
+#### Research Artifacts
+
+The project includes:
+
+- multidimensional trustworthiness scoring;
+- explicit dimension weights and thresholds;
+- critical-risk gating;
+- deployment-readiness logic;
+- synthetic AI-system evaluation data;
+- reusable Python evaluation pipeline;
+- responsible-AI model card template;
+- research protocol;
+- evaluation framework documentation;
+- Jupyter analysis notebook;
+- automated tests;
+- reproducible result templates; and
+- trustworthiness comparison figures.
+
+#### Reproducibility
+
+The initial study uses transparent synthetic system profiles so that the scoring methodology, thresholds, and gating behavior can be independently inspected and reproduced.
+
+Future phases will connect evidence from the LLM Evaluation and RAG Security projects, introduce measurement uncertainty and confidence intervals, evaluate alternative stakeholder weighting profiles, and validate the framework using real AI systems.
+
+**Project:** `projects/trustworthy-ai/`
 
 4. Cybersecurity + Machine Learning
 
