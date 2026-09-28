@@ -1,0 +1,7 @@
+dimension,critical_threshold,weight
+reliability,0.65,0.22
+robustness,0.6,0.18
+transparency,0.55,0.12
+privacy,0.6,0.18
+fairness,0.6,0.14
+governance,0.6,0.16

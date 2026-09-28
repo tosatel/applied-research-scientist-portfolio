@@ -1,0 +1,5 @@
+system,reliability,robustness,transparency,privacy,fairness,governance,composite_trust,minimum_dimension,minimum_score,gate_failures,critical_gate_pass,readiness
+System-A,0.91,0.82,0.72,0.88,0.76,0.84,0.8334,transparency,0.72,,True,ready_for_controlled_pilot
+System-B,0.94,0.87,0.83,0.48,0.8,0.86,0.799,privacy,0.48,privacy,False,remediation_required
+System-C,0.78,0.73,0.88,0.82,0.85,0.79,0.8016,robustness,0.73,,True,ready_for_controlled_pilot
+System-D,0.69,0.61,0.64,0.75,0.67,0.58,0.66,governance,0.58,governance,False,remediation_required
