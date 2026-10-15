@@ -1,0 +1,11 @@
+model,feature,standardized_coefficient
+Content-only,language_consistency,0.5106500608490877
+Content-only,claim_specificity,0.5513270722650925
+Source-only,source_history,0.49392478022773206
+Source-only,provenance_quality,0.6756181941562276
+Multidimensional,language_consistency,0.13685307512814668
+Multidimensional,claim_specificity,0.30361933267460645
+Multidimensional,source_history,0.12819154457501258
+Multidimensional,provenance_quality,0.33220389154525204
+Multidimensional,independent_corroboration,1.0246395310619365
+Multidimensional,context_alignment,0.6924430733050838
