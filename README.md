@@ -304,6 +304,71 @@ The initial results demonstrate the evaluation pipeline under controlled synthet
 
 The strong separation between synthetic normal and anomalous events may make the classification problem easier than real-world threat detection. Future experiments will therefore introduce more difficult class boundaries, distribution shift, temporal evaluation, class imbalance, and external cybersecurity datasets.
 
+### 5. Information Trust & Misinformation Detection Benchmark
+
+**Status: Active / Initial reproducible framework completed**
+
+A computational-trust research project investigating whether
+multidimensional information-trust signals improve misinformation
+detection, probability quality, and interpretability compared with
+content-only and source-only baselines.
+
+#### Research Question
+
+Can multidimensional information-trust signals improve misinformation
+detection, calibration, and interpretability compared with content-only
+classification?
+
+#### Methodology
+
+The study evaluates three models:
+
+1. Content-only baseline
+2. Source-only baseline
+3. Multidimensional information-trust model
+
+The models are evaluated using precision, recall, F1, ROC-AUC,
+Brier score, and log loss.
+
+#### Initial Experimental Findings
+
+| Model | F1 | ROC-AUC | Brier Score |
+|---|---:|---:|---:|
+| Content-only | 0.562 | 0.650 | 0.237 |
+| Source-only | 0.593 | 0.666 | 0.233 |
+| Multidimensional | 0.739 | 0.823 | 0.172 |
+
+The multidimensional model achieved the strongest results on the
+synthetic benchmark. Independent corroboration and contextual
+alignment were prominent predictive signals.
+
+These findings are limited to synthetic data and do not establish
+real-world misinformation-detection accuracy or factual truthfulness.
+
+#### Research Artifacts
+
+- Synthetic benchmark dataset
+- Feature dictionary
+- Reproducible evaluation pipeline
+- Baseline model comparison
+- Probability-quality evaluation
+- Standardized coefficient analysis
+- Jupyter notebook
+- Automated tests
+- Research protocol
+- Three research figures
+
+#### Future Research
+
+- Real-world misinformation benchmark validation
+- Repeated experiments and confidence intervals
+- Reliability diagrams and calibration analysis
+- Source credibility distribution shifts
+- Missing and conflicting provenance evidence
+- Explainability and fairness analysis
+
+**Project:** [Information Trust Benchmark](projects/information-trust-benchmark/)
+
 #### Research Artifacts
 
 The project includes:
